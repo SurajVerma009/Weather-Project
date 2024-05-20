@@ -20,7 +20,7 @@ form.addEventListener("click", (e) => {
             outputBox.style.visibility = "visible"
         }, 500)
 
-        const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}`;
 
         fetch(apiUrl)
             .then(response => {
